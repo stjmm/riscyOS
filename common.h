@@ -21,6 +21,8 @@ typedef uint32_t vaddr_t; // Virtual address
 #define va_end   __builtin_va_end
 #define va_arg   __builtin_va_arg
 
+#define PAGE_SIZE 4096
+
 void *memset(void *buf, char c, size_t n);
 void *memcpy(void *dst, void *src, size_t n);
 char *strcpy_s(char *dst, const char *src, size_t n);
